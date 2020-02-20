@@ -2,6 +2,7 @@ Feature: Guests Explores
 
   Scenario: Guest explores shore excursions destinations
 
+    Given a Guest
     Given I am on Homepage
     And I navigated to “Shore Excursion” page
     When I search for destination “Alaska Cruises”

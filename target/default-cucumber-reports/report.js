@@ -10,6 +10,16 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
+  "name": "a Guest",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "GuestsExploreStepDefinitions.a_Guest()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "I am on Homepage",
   "keyword": "Given "
 });

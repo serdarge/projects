@@ -10,6 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BasePage {
 
 
@@ -21,6 +24,10 @@ public class BasePage {
         //this means this page class
         PageFactory.initElements(Driver.get(), this);
     }
+
+
+
+
 
 
     public void navigateTo(String moduleName, String subModuleName) {
