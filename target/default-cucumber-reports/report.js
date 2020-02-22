@@ -9,6 +9,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "a Guest",
   "keyword": "Given "
@@ -77,6 +80,9 @@ formatter.match({
   "location": "GuestsExploreStepDefinitions.filter_By_Ports_are_only_belong_to_Alaska_British_Columbia()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });

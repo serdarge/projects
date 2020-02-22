@@ -68,6 +68,8 @@ public class GuestsExploreStepDefinitions extends BasePage {
         expectedPorts.add("Icy Strait Point, Alaska");
         expectedPorts.add("Juneau, Alaska");
         expectedPorts.add("Ketchikan, Alaska");
+        expectedPorts.add("San Diego, California");
+        expectedPorts.add("Seattle, Washington");
         expectedPorts.add("Seward, Alaska");
         expectedPorts.add("Sitka, Alaska");
         expectedPorts.add("Skagway, Alaska");
