@@ -2,6 +2,7 @@ package com.norvegian.step_definitions;
 
 import com.norvegian.pages.BasePage;
 import com.norvegian.pages.ShoreExcursionPage;
+import com.norvegian.utilitys.BrowserUtils;
 import com.norvegian.utilitys.ConfigurationReader;
 import com.norvegian.utilitys.Driver;
 import io.cucumber.java.en.*;
@@ -20,17 +21,14 @@ public class GuestsExploreStepDefinitions extends BasePage {
     public void a_Guest() {
         Driver.get().get(ConfigurationReader.getProperty("url"));
         Driver.get().manage().window().maximize();
-
     }
 
     @Given("I am on Homepage")
     public void i_am_on_Homepage() {
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 10);
+        BrowserUtils.waitForPageToLoad(5);
         String actualTitle = Driver.get().getTitle();
         String expectedTitle = "Cruises & Cruise Deals | Plan Your Cruise Vacation | NCL";
         Assert.assertEquals("Guest is not on Homepage", expectedTitle, actualTitle);
-
-
     }
 
     @Given("I navigated to “Shore Excursion” page")

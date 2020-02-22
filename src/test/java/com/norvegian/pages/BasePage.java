@@ -23,12 +23,11 @@ public class BasePage {
     }
 
     public void navigateTo(String moduleName, String subModuleName) {
+        WebDriverWait wait = new WebDriverWait(Driver.get(), 20);
         Actions actions = new Actions(Driver.get());
         String moduleLocator = "//a[@href='#'][@title='" + moduleName + "']";
-        BrowserUtils.wait(3);
         String subModuleLocator = "//a[@class='linkItem'][@title='" + subModuleName + "']";
 
-        WebDriverWait wait = new WebDriverWait(Driver.get(), 20);
         wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(moduleLocator)));
 
         WebElement module = Driver.get().findElement(By.xpath(moduleLocator));
