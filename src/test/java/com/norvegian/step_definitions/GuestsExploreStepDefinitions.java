@@ -19,8 +19,7 @@ public class GuestsExploreStepDefinitions extends BasePage {
 
     @Given("a Guest")
     public void a_Guest() {
-        Driver.get().get(ConfigurationReader.getProperty("url"));
-        Driver.get().manage().window().maximize();
+        System.out.println("User is a Guest");
     }
 
     @Given("I am on Homepage")
