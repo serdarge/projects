@@ -31,10 +31,10 @@ public class ShoreExcursionPage extends BasePage {
     @FindBy(xpath = "//span[contains(text(),'Alaska Cruises')]")
     public WebElement result;
 
-    @FindBy (xpath = "//button[@type='submit']")
+    @FindBy(xpath = "//button[@type='submit']")
     public WebElement searchButton;
 
-    @FindBy (xpath = ("//span[@class='items-text']"))
+    @FindBy(xpath = ("//span[@class='items-text']"))
     public WebElement searchResult;
 
     @FindBy(xpath = "//ul[@id='ports']//li//label")
@@ -42,10 +42,6 @@ public class ShoreExcursionPage extends BasePage {
 
     @FindBy(xpath = "//span[contains(text(),'Port')]")
     public WebElement portResults;
-
-
-
-
 
 
 }

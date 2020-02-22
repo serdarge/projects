@@ -10,7 +10,6 @@ import org.junit.runner.RunWith;
         glue = "com/norvegian/step_definitions",
         dryRun = false,
         plugin = {"html:target/default-cucumber-reports",
-                "rerun:target/rerun.txt"
         }
 )
 public class CucumberRunner {

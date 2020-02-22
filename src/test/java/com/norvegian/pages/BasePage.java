@@ -15,20 +15,12 @@ import java.util.List;
 
 public class BasePage {
 
-
-
-
     public BasePage() {
         //this method requires to provide webdriver object for @FindBy
         //and page class
         //this means this page class
         PageFactory.initElements(Driver.get(), this);
     }
-
-
-
-
-
 
     public void navigateTo(String moduleName, String subModuleName) {
         Actions actions = new Actions(Driver.get());
@@ -48,4 +40,4 @@ public class BasePage {
         submodule.click();
     }
 
-    }
+}
