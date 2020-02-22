@@ -1,5 +1,6 @@
 package com.norvegian.step_definitions;
 
+import com.norvegian.utilitys.Driver;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.*;
 
@@ -7,7 +8,9 @@ import io.cucumber.java.*;
 public class Hook {
 
     @Before
+
     public void setup() {
+        System.out.println("=============================");
         System.out.println("Test Setup");
     }
 
@@ -20,7 +23,10 @@ public class Hook {
             System.out.println("Test completed!");
         }
         System.out.println("=============================");
+
+        Driver.get().close();
     }
+
 
 
 }
