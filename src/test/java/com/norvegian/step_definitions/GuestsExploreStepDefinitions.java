@@ -77,7 +77,12 @@ public class GuestsExploreStepDefinitions extends BasePage {
             System.out.println("Test Passed, Filter By Ports are only belong to “Alaska, British Columbia”");
         } else {
             System.out.println("Test Failed, Filter By Ports are NOT only belong to “Alaska, British Columbia”");
+
+
+
         }
+
+        List<WebElement> listem = Driver.get().findElements(By.xpath("//..."));
     }
 
 }
